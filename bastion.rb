@@ -10,7 +10,7 @@ class Bastion < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/LipJ01/fly-ssh-bastion/releases/download/v0.1.0/bastion_0.1.0_darwin_amd64.tar.gz"
-      sha256 "834550ac60202724d1e89b61617900e373f5a3921bf3d8ccd8d2ed50977f1ade"
+      sha256 "a800ef1718d1f22015ddce304094cca0d958af9acb44346fad275401d03c83cf"
 
       def install
         bin.install "bastion"
@@ -18,7 +18,7 @@ class Bastion < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/LipJ01/fly-ssh-bastion/releases/download/v0.1.0/bastion_0.1.0_darwin_arm64.tar.gz"
-      sha256 "23bafbc9c1b88d75542291b42e4aef0dcca3fedbdfbd15acbf891a6468fc758b"
+      sha256 "02055df5f6f55df1861f92e06d2861430fe8de9f36509a775a4c2518f2bbec70"
 
       def install
         bin.install "bastion"
@@ -29,14 +29,14 @@ class Bastion < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/LipJ01/fly-ssh-bastion/releases/download/v0.1.0/bastion_0.1.0_linux_amd64.tar.gz"
-      sha256 "bc453300fe2d366cb4a5aaafb84c0be13a34623366c2c278e8d109df273cfd83"
+      sha256 "7b6fd6405c590b25e7c299c18f5029f8d526e1dd2182a3acc7a96230c722bb96"
       def install
         bin.install "bastion"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/LipJ01/fly-ssh-bastion/releases/download/v0.1.0/bastion_0.1.0_linux_arm64.tar.gz"
-      sha256 "6da6746419385f7abd1fe0fc65a6f2574cc990be5500f37ff6e73843f4343777"
+      sha256 "6dbf632d6813db0c1ccb2e98b3e606be2e83bf22b0eaa2c16d49ea2d44eef4ff"
       def install
         bin.install "bastion"
       end
