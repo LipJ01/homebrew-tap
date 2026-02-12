@@ -5,20 +5,20 @@
 class Bastion < Formula
   desc "CLI for SSH bastion tunnel management"
   homepage "https://github.com/LipJ01/fly-ssh-bastion"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/LipJ01/fly-ssh-bastion/releases/download/v0.1.0/bastion_0.1.0_darwin_amd64.tar.gz"
-      sha256 "11268a580985c144fad0945d9a481c994e63ed9a4f9e778e652329d1b8fe91da"
+      url "https://github.com/LipJ01/fly-ssh-bastion/releases/download/v0.2.0/bastion_0.2.0_darwin_amd64.tar.gz"
+      sha256 "de6fec9631c3d82302fb2da7381000b1f52cf0a32864223d14c1d2a348515612"
 
       def install
         bin.install "bastion"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/LipJ01/fly-ssh-bastion/releases/download/v0.1.0/bastion_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c51f5c6d4e29ca134d0cd089d5fa81a7eb5843fc08c5d6097edc7d5dd37c56f3"
+      url "https://github.com/LipJ01/fly-ssh-bastion/releases/download/v0.2.0/bastion_0.2.0_darwin_arm64.tar.gz"
+      sha256 "921c33ffe3fb9e2fe27bae661d80e0552d31af5a3670a21fb4fb3042b65ce925"
 
       def install
         bin.install "bastion"
@@ -28,15 +28,15 @@ class Bastion < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LipJ01/fly-ssh-bastion/releases/download/v0.1.0/bastion_0.1.0_linux_amd64.tar.gz"
-      sha256 "ba2a547477a4d9c3a1f572dfaa9282064e1b7b92a6b54d2d0620e47d9bd9c85b"
+      url "https://github.com/LipJ01/fly-ssh-bastion/releases/download/v0.2.0/bastion_0.2.0_linux_amd64.tar.gz"
+      sha256 "6ede5eb54dd1b7ddb8aebaab5e7f530e9d561c45a71c70a7558b942dee9a2b12"
       def install
         bin.install "bastion"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LipJ01/fly-ssh-bastion/releases/download/v0.1.0/bastion_0.1.0_linux_arm64.tar.gz"
-      sha256 "7e9b7b3cc3d69c5a4e3d1e2b3c7c43188c5ac3f82a18ece6f60b6c58376a9640"
+      url "https://github.com/LipJ01/fly-ssh-bastion/releases/download/v0.2.0/bastion_0.2.0_linux_arm64.tar.gz"
+      sha256 "1dffc05a950d870fb10fb2a6e2b19f14dc6c411fe05cee56c970759882db5b47"
       def install
         bin.install "bastion"
       end
